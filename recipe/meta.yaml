@@ -1,5 +1,5 @@
 {% set name = "shippinglabel-pypi" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/shippinglabel_pypi-{{ version }}.tar.gz
-  sha256: f27064a4a04d1cec9400fbbdc54d21881ea86aa5d70b8502f15c6a6342a050a7
+  sha256: 5707d09051e5e64e633f323cb561517f74cc4e18982b78b2c82f34d15dac5937
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - domdf-python-tools >=3.3.0
     - packaging >=21.3
     - pypi-json >=0.5.0
+    - pypi-simple >=1.5.0
     - python >={{ python_min }}
     - requests >=2.27.1
     - shippinglabel >=1.3.1
