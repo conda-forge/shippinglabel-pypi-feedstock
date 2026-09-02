@@ -1,13 +1,13 @@
 {% set name = "shippinglabel-pypi" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/shippinglabel_pypi-{{ version }}.tar.gz
-  sha256: 9c53c4b154fd2e6b5b149fb46c5d5b46f785445b269c4957e2f5e4c4f6776acf
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/shippinglabel_pypi-{{ version }}.tar.gz
+  sha256: a187939a749b3c7910b715e610615ae802639e1010244c1a9d80ecfb59633ad5
 
 build:
   noarch: python
