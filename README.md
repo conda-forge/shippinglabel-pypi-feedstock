@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `shippinglabel-pypi` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install shippinglabel-pypi
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install shippinglabel-pypi
 ```
 
-It is possible to list all of the versions of `shippinglabel-pypi` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add shippinglabel-pypi
+# for installing globally
+pixi global install shippinglabel-pypi
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `shippinglabel-pypi` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search shippinglabel-pypi --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search shippinglabel-pypi --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search shippinglabel-pypi --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds shippinglabel-pypi --channel conda-forge
 # List dependencies of `shippinglabel-pypi`:
 mamba repoquery depends shippinglabel-pypi --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
